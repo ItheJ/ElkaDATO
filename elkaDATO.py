@@ -242,9 +242,6 @@ def about():
     canvas.create_text(125, 140, anchor=NW, font = "Haettenschweiler 16", text="Все права сохранены, \nпредоставляется всем \nуправленцам Ёлочных государств и \nпросто людям", fill="#000000")
     canvas.create_text(10, 250, anchor=NW, font = "Haettenschweiler 16", text="PSB ent., elkaDATO©, 2025", fill="#000000")
 
-
-    toplvl.attributes("-toolwindow", 1)
-
     toplvl.mainloop()
 
 def exit_session():
@@ -289,6 +286,5 @@ scrollbar = ttk.Scrollbar(tk, orient=VERTICAL, command=text_zone.yview)
 scrollbar.pack(fill=Y, side=RIGHT)
 text_zone['yscrollcommand'] = scrollbar.set
 
-tk.attributes("-toolwindow", 1)
 tk.config(menu=menubar)
 tk.mainloop()
